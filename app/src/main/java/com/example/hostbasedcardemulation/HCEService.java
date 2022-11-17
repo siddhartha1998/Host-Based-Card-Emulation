@@ -19,13 +19,6 @@ public class HCEService extends HostApduService {
 
     @Override
     public byte[] processCommandApdu(byte[] commandApdu, Bundle bundle) {
-        Toast.makeText(this,commandApdu.toString(),Toast.LENGTH_LONG);
-        Log.d("commandApdu","data: "+commandApdu);
-        Log.d("commandAPdu","hexapdu: "+Utils.byteArrayToHex(commandApdu));
-
-        if(commandApdu[2] == 0xA4){
-            return new byte[] {(byte) 0x90,0x00};
-        }
 
         if(commandApdu == null){
             Toast.makeText(this,commandApdu.toString(),Toast.LENGTH_LONG);
