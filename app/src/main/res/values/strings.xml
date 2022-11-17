@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HostBasedCardEmulation</string>
+    <string name="service_description">CardEmulation Description</string>
+    <string name="appdu_description">Host Based Card Emulation</string>
+</resources>
